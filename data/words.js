@@ -4,9 +4,9 @@ const words = [{
         letterCount: '8'
     }, 
     {
-        word: "welcome",
+        word: "wonder",
         id: '2',
-        letterCount: '7'
+        letterCount: '6'
     },
     {
         word: "super",
@@ -21,7 +21,7 @@ const words = [{
     {
         word: "water",
         id: '5',
-        letterCount: '7'
+        letterCount: '5'
     },
     {
         word: "coding",
@@ -34,7 +34,7 @@ const words = [{
         letterCount: '5'
     },
     {
-        word: "adverse",
+        word: "attack",
         id: '8',
         letterCount: '7'
     }

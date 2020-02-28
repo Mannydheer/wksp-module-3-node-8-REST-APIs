@@ -38,6 +38,8 @@ const startGame = () => {
             let displayletters = document.getElementById('displayLetters')
             displayletters.innerText = underScores.replace(/,/g," ");
 
+  
+
         }
     })
 }
@@ -62,26 +64,25 @@ let actualletter = holder.value
            return (returnedBool.json())
         })
         .then(boolChecker => {
-            boolChecker.forEach(element => {
+            boolChecker.forEach((element, index) => {
                 if (element === true) {
-                    index = boolChecker.indexOf(element)
-                    boolholder.splice(index,1, true)
+                    // boolholder.splice(index,1, true)
+                    boolholder[index] = true;
                     //this will keep assinging the bool to true. 
-                    underScore.splice(index,1, `${actualletter}`)
+                    // underScore.splice(index,1, `${actualletter}`)
+                    underScore[index] = `${actualletter}`
                     //change to string
                     let arraytoString = underScore.toString()
                     //display the letters. 
                     let displayletters = document.getElementById('displayLetters')
                     displayletters.innerText = arraytoString.replace(/,/g," ");
 
-                    winnerCount++;
+                    // winnerCount++;
                     console.log(winnerCount)
                     console.log(wordLength)
-                    if (winnerCount == wordLength) {
-                        console.log('hi')
+                    if (!boolholder.includes(false)) {
                         winnerEle = document.getElementById('winner')
                         winnerEle.innerText = "YOU WON !!!"
-
                     }
 
                 } 

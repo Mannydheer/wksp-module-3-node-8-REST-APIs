@@ -9,9 +9,6 @@ const {
 
 const PORT = process.env.PORT || 8000;
 
-let wordEnter;
-let indexGetter;
-
 const handleWord = (req, res) => {
     let random = Math.floor(Math.random() * 8)
     //    wordEnter = words[random].word
@@ -39,7 +36,6 @@ const handleEach = (req, res) => {
         }
     })
     const currentWord = gameWord.word
-    console.log(gameWord)
     //First thing split each letter and insert into an array. 
     let splitWord = currentWord.split('')
     //have a counter which counts the words where I can compare. 
@@ -48,29 +44,29 @@ const handleEach = (req, res) => {
     for (let i = 0; i < wordCount; i++) {
         boolBox.push(false)
     }
-    console.log(boolBox)
     // now a button will be pressed and the value of it will be the letter entered.... 
     // do a for each for the booleans which goes and checks if the letter exicsts and if it does, get
     // the array index and also make it into true. Once they are all true, you win....
-    splitWord.forEach(letter => {
-        if (letter === letterholder) {
+    splitWord.forEach((letter, index )=> {
+        if (letter == letterholder) {
+            console.log(letterholder)
+            console.log(letter)
 
             //assign the bool to true. 
             //get the index of the current letter. 
-            indexGetter = splitWord.indexOf(letter)
-            console.log(indexGetter)
             // letterInsert[indexGetter] = letterentered;
-            boolBox[indexGetter] = true;
+            boolBox[index] = true;
+            console.log(boolBox)
+
             // console.log(boolBox)
             //create an object with the information. 
-            res.send(boolBox)
-
-
-
-
+            
         }
 
     });
+    //res.send.
+    res.send(boolBox)
+    
     // res.send(wordEnter)
     //this boolean will hold the index of at which we want to insert
     // the letter in the front end 

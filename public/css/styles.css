@@ -84,9 +84,9 @@ codeblock {
   padding: 12px 14px; }
 
 body {
-  background: #fafafa;
-  display: flex;
+  background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
   flex-direction: column;
+  display: flex;
   min-height: 100vh; }
 
 .main {
@@ -136,7 +136,8 @@ body {
   font-size: 20px;
   outline: none;
   cursor: pointer;
-  transition: all 0.2s; }
+  transition: all 0.2s;
+  font-family: "Poppins"; }
 
 .letter:hover {
   background-color: lightcoral; }
@@ -144,20 +145,26 @@ body {
 .allLetters {
   margin: auto;
   width: 50%;
-  border: 3px solid green;
   padding: 10px; }
 
 .word {
+  text-align: center;
   margin: auto;
   width: 50%;
-  border: 3px solid #12086d;
   padding: 10px;
-  font-size: 50px; }
-
-body {
-  background-color: #73C8A9; }
+  font-size: 50px;
+  font-family: "Poppins"; }
 
 .winner {
+  font-size: 30px;
   margin: auto;
   width: 50%;
-  border: 3px solid #12086d; }
+  text-align: center;
+  font-family: 'Poppins'; }
+
+.header {
+  font-size: 50px;
+  font-family: 'Poppins';
+  margin: auto;
+  width: 50%;
+  text-align: center; }

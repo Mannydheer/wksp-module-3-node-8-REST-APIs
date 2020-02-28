@@ -3,9 +3,9 @@
 @import 'typography';
 
 body {
-    background: #fafafa;
-    display: flex;
+    background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
     flex-direction: column;
+    display: flex;
     min-height: 100vh;
 }
 
@@ -72,6 +72,8 @@ body {
     outline: none;
     cursor: pointer;
     transition: all 0.2s;
+    font-family: 'Poppins', ;
+
 }
 
 .letter:hover {
@@ -81,27 +83,37 @@ body {
 .allLetters {
     margin: auto;
     width: 50%;
-    border: 3px solid green;
     padding: 10px;
 }
 
 .word {
+    text-align: center;
     margin: auto;
     width: 50%;
-    border: 3px solid rgb(18, 8, 109);
     padding: 10px;
     font-size: 50px;
+    font-family: 'Poppins', ;
+
 
 }
 
-body {
-    background-color: #73C8A9;
-}
 
 //display winner.
 .winner {
+
+    font-size: 30px;
     margin: auto;
     width: 50%;
-    border: 3px solid rgb(18, 8, 109);
+    text-align: center;
+    font-family: 'Poppins';
+}
+
+.header {
+    font-size: 50px;
+    font-family: 'Poppins';
+    margin: auto;
+    width: 50%;
+    text-align: center;
+
 
 }
