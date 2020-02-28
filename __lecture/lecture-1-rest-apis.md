@@ -52,6 +52,7 @@ _This separation of concerns allows both the client and the server to evolve ind
 ### REST is cacheable.
 
 - The client, the server and any intermediary components can all cache resources in order to improve performance.
+- You can cache for ex, the joke somewhere. 
 
 ---
 

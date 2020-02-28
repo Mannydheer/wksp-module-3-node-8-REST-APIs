@@ -6,10 +6,47 @@
     </style>
 </head>
 <body>
-    <div class="content">
-        time to get to hanging.... I mean guessing...
+    <!-- <form onclick="startGame(event)">
+        <button class="start" id="startGame">Start Game</button>
+    </form> -->
+    <div class="allLetters">
+    <form onclick="letterClick(event)">
+        <!-- double check why you need id.  -->
+        <button class="letter" id="alphabeta" name="a"  value="a">a</button>
+        <button class="letter" id="alphabetb" name="b"  value="b">b</button>
+        <button class="letter" id="alphabetc" name="c"  value="c">c</button>
+        <button class="letter" id="alphabetd" name="d"  value="d">d</button>
+        <button class="letter" id="alphabete" name="e"  value="e">e</button>
+        <button class="letter" id="alphabetf" name="f"  value="f">f</button>
+        <button class="letter" id="alphabetg" name="g"  value="g">g</button>
+        <button class="letter" id="alphabeth" name="h"  value="h">h</button>
+        <button class="letter" id="alphabeti" name="i"  value="i">i</button>
+        <button class="letter" id="alphabetj" name="j"  value="j">j</button>
+        <button class="letter" id="alphabetk" name="k"  value="k">k</button>
+        <button class="letter" id="alphabetl" name="l"  value="l">l</button>
+        <button class="letter" id="alphabetm" name="m"  value="m">m</button>
+        <button class="letter" id="alphabetn" name="n"  value="n">n</button>
+        <button class="letter" id="alphabeto" name="o"  value="o">o</button>
+        <button class="letter" id="alphabetp" name="p"  value="p">p</button>
+        <button class="letter" id="alphabetq"  name="q" value="q">q</button>
+        <button class="letter" id="alphabetr"  name="r" value="r">r</button>
+        <button class="letter" id="alphabets"  name="s" value="s">s</button>
+        <button class="letter" id="alphabett"  name="t" value="t">t</button>
+        <button class="letter" id="alphabetu"  name="u" value="u">u</button>
+        <button class="letter" id="alphabetv"  name="v" value="v">v</button>
+        <button class="letter" id="alphabetw"  name="w" value="w">w</button>
+        <button class="letter" id="alphabetx"  name="x" value="x">x</button>
+        <button class="letter" id="alphabety"  name="y" value="y">y</button>
+        <button class="letter" id="alphabetz"  name="z" value="z">z</button>
+    </form>
     </div>
+
+    <div class="word" id="displayLetters"></div>
+    <div id="winner"></div>
+   
     <script src="scripts.js"></script>
 </body>
 
 </html>
+
+<!-- document.getElementById("myBtn").addEventListener("click", displayDate); -->

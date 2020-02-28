@@ -18,6 +18,10 @@ Provide him with a series of REST endpoints that meet all, or most of the RESTfu
 
 _This activity is more about the discussion in how to best organize data endpoints. There will not be any coding, unless you really want to provide Greg with working endpoints that he can test in Insomnia._
 
+```
+
+```
+
 ---
 
 ## Exercise 2 (Optional)

@@ -50,10 +50,58 @@ body {
 }
 
 @media screen and (min-width: 900px) {
-    
+
     .content {
         flex-direction: row;
         justify-content: space-between;
         min-height: 500px;
     }
+}
+
+
+.letter {
+    border: solid 1px black;
+    width: 70px;
+    height: 70px;
+    padding: 25px;
+    margin: 5px;
+    border-radius: 50%;
+    color: black;
+    background-color: white;
+    font-size: 20px;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.letter:hover {
+    background-color: lightcoral;
+}
+
+.allLetters {
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+}
+
+.word {
+    margin: auto;
+    width: 50%;
+    border: 3px solid rgb(18, 8, 109);
+    padding: 10px;
+    font-size: 50px;
+
+}
+
+body {
+    background-color: #73C8A9;
+}
+
+//display winner.
+.winner {
+    margin: auto;
+    width: 50%;
+    border: 3px solid rgb(18, 8, 109);
+
 }
